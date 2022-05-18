@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles.css">
+    <script src="https://kit.fontawesome.com/9b0c6daec2.js" crossorigin="anonymous"></script>
+    <title>Quizzle</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <button onclick="dropdownFunc(this)" class="dropbtn">&#9776;</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">Leaderboard</a></li>
+                <a href="/create-post">Add a Card</a>
+                <a href="/gallery">Card Gallery</a>
+                <switch id="appearance-switch">Dark mode</switch>
+            </div>
+            <a><button>Study Now!</button></a>
+        </div>
+
+        <div class="menu">
+            <a style="background-color: transparent;" href="/quizzle"><img class="logo" src="../static/img/quizzle-logo.png" alt="Quizzle" height="50px" width="auto"></a>
+        </div>
+        
+        <div class="menu">
+           
+              <a class="logs" href="/add-card"><button>Upload Flashcard</button></a>
+              <a class="logs" href="/logout"><button>Logout</button></a>
+               
+              <a class="logs" href="/login"><button>Login</button></a>
+              <a class="logs" href="/sign-up"><button>Sign Up</button></a>
+         
+        </div>
+        
+    </header>
+
+    <div class="containter">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Subscribe to email</h3>
+            <div class="container"
+             <form method="POST">
+                 <input type="email" class="form-control" 
+                         id="email" name="email" 
+                         placeholder="Enter email"
+                 />
+             <button type="submit" class="sub">Subscribe</button>
+             
+             </form>
+ 
+            </div>
+            
+            <h3>Socials</h3>
+            <ul class="socials">
+                <li><a href="https://open.spotify.com/artist/6AUzcVHJqXKVTik04KRTNo?si=jB6WXQKIRiO9SE5_LwP1AA"><i class="fa fa-spotify"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCFBOiYFQw78-gHZ391m8QpQ"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://soundcloud.com/user-190305667"><i class="fa fa-soundcloud"></i></a></li>
+                <li><a href="https://instagram.com/prod.wavepapi?utm_medium=copy_link"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; Jack Sturgess 2021</p>
+        </div>
+
+        <script src="{{url_for('static', filename='main.js')}}"></script>
+
+    </footer>
+</body>
+</html>

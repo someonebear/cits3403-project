@@ -1,0 +1,672 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+/* ---------- navbar ---------- */
+
+li,
+a {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 30px 10%;
+    height: 10vh;
+    background-color: #2c353a;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    background-color: #2c353a;
+}
+
+.menu button {
+    border-radius: 12px;
+}
+
+.menu a {
+    background-color: #2c353a;
+}
+
+.menu-dropbtn {
+    
+}
+
+.logo {
+    cursor: pointer;
+    background-color: transparent;
+    height: 20vh;
+}
+
+
+.nav-links {
+    list-style: none;
+    background-color: #2c353a;
+    border: 2px solid red;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+    color: white;
+    background-color: #2c353a;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+    background-color: #2c353a;
+}
+
+.nav-links a {
+    color: white;
+}
+
+.nav-links a:hover {
+    color: #b3c6ff;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+.logs button {
+    border-radius: 12px;
+    margin: 5px;
+}
+
+.logs {
+    background-color: #2c353a;
+}
+
+/* ---------- unsure ---------- */
+
+.df {
+    margin: 15px;
+    border: 2px solid red;
+
+}
+
+.df li {
+    margin: 5px;
+    border-radius: 12px;
+
+}
+
+.df li button {
+    border: 1px solid white;
+    border-radius: 12px;
+    color: white;
+    background-color: black;
+}
+
+.df li button:hover {
+    border: 1px solid black;
+    border-radius: 12px;
+    color: black;
+    background-color: wheat;
+}
+
+h1 {
+    color: white;
+}
+
+.oof {
+    margin: 15px;
+
+}
+
+.oof li {
+    margin: 5px;
+    border-radius: 12px;
+
+}
+
+.oof li button {
+    border: 1px solid white;
+    border-radius: 12px;
+    color: white;
+    background-color: black;
+}
+
+.oof li button:hover {
+    border: 1px solid black;
+    border-radius: 12px;
+    color: black;
+    background-color: wheat;
+}
+
+.container-big {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-big .container-small {
+    margin-left: 100px;
+}
+
+
+.footer-content {
+    color: white;
+}
+
+.footer-bottom {
+    color: white;
+}
+
+.form-group {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+.form-group .btn {
+    border-radius: 12px;
+    margin-left: 0;
+
+}
+
+.form-control {
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    border: none;
+    padding: 8px 24px;
+    width: 100%;
+    margin-right: 150px;
+
+}
+
+.auth-options {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.connect-wallet .form-group .btn {
+    text-align: center;
+}
+
+.alert {
+    border-radius: 12px;
+    border: 2px solid white;
+    width: auto;
+    background-color: #6f727b;
+    padding: 5px;
+    margin-left: 100px;
+    text-align: center;
+    width: 200px;
+}
+
+.alert-success {
+    color: rgb(8, 182, 8);
+}
+
+.alert-danger {
+    color: red;
+}
+
+
+.dropdown-content a {
+    background-color: white;
+
+}
+
+/* Statistics */
+
+.title {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.stats-container {
+    border: 2px solid red;
+   text-align: center;
+}
+
+.subject-container {
+    border: 2px solid green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.subject-container div {
+    border: 2px solid white;
+}
+
+/* Adding question */
+
+.dropbtn {
+    border-radius: 50%;
+    padding: 0;
+}
+
+.create-btn {
+    padding: 12px 24px;
+    border-radius: 12px;
+    background-color: #2980B9;
+    color: #124261;
+}
+
+
+.card {
+    background-color: #6f727b;
+}
+
+.card-text {
+    background-color: #124261;
+    color: white;
+    padding: 5px;
+}
+
+.like-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.like {
+    color: #3498DB;
+}
+
+.create-post {
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    margin: 25px;
+}
+
+.post-text {
+    margin: 15px;
+    width: 25vw;
+}
+
+.btn {
+    border-radius: 12px;
+    padding: 12px 24px;
+    background-color: #2980B9;
+    color: black;
+    border: 2px solid black;
+}
+
+.btn:hover {
+    border-radius: 12px;
+    padding: 12px 24px;
+    background-color: #1f71a8;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.flash-front, .flash-back {
+    border: 3px solid #3498DB;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.flash-head {
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    text-align: center;
+}
+
+#question-text, #answer-text {
+    background-color: white;
+    color: black;
+    width: 85vw;
+    padding: 5px;
+    border: none;
+    
+}
+
+#question-text:focus, #answer-text:focus {
+    border: 3px solid #3498DB;
+    border-radius: 12px;
+    outline: none !important;
+}
+
+/* ---------- Subject Selector ---------- */
+.choose-subject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    margin-top: 20%;
+}
+
+.subject-selector {
+    border: 2px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10rem;
+}
+
+
+
+/* ---------- Quizzle ---------- */
+
+#main {
+    border: 2px solid #3498DB;
+    height: 100vh;
+}
+
+.question-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid yellow;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+    
+.question-head h3 {
+    color: white;
+}
+
+.question-head p {
+    color: white;
+}
+
+
+.game {
+    border: 2px solid red;
+    border-radius: 12px;
+    margin: 25px;
+}
+
+.game-board {
+    border: 2px solid palevioletred;
+    color: white;
+}
+
+.option {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.option:hover {
+    background-color: #1f71a8;
+    
+}
+
+.option-btn {
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 16px;
+    color: white;
+    background-color: #444;
+}
+
+.option p {
+    background-color: transparent;
+}
+
+.scoresheet {
+    display: flex;
+    flex-direction: row;
+    border-radius: 12px;
+}
+
+#score-blocks td {
+    border: 2px solid blue;
+}
+
+
+#score-table {
+    width: calc(100% / 5 * 4);
+    margin: 10px;
+}
+
+#score-table td {
+    border: 2px solid white;
+    padding: 48px;
+    border-radius: 12px;
+    gap: 200px;
+}
+
+.score-card {
+    width: calc(100% / 5 * 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 2px solid white;
+    border-bottom-right-radius: 12px;
+}
+
+.grade-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+
+
+
+/* ---------- Footer ----------s */
+footer {
+    background-color: black;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: white;
+    margin-top: auto;
+}
+
+.footer-content {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    background-color: black;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14;
+    background-color: black;
+}
+
+.socials {
+    background-color: black;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: centre;
+    margin: 1rem 0 2rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: white;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    transition: color .4 ease;
+    background-color: black;
+}
+
+.socials a:hover i {
+    color: aqua;
+
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    background-color: black;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+.container {
+    background-color: black;
+}
+
+footer .btn {
+    margin: 0;
+}
+
+footer .btn .btn-primary {
+    margin: 0;
+}
+
+.sub {
+    border-radius: 12px;
+}
+
+/* ------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------- Referenced CSS Components ---------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------*/
+
+/* ---------- Dropdown Button ---------- w3 Schools https://www.w3schools.com/howto/howto_js_dropdown.asp */
+.dropbtn {
+    background-color: rgba(0, 136, 169, 1);
+    color: white;
+    padding: 8px 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    margin-top: 200px;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    text-decoration: none;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: white;
+    border: 2px solid white;
+}
+
+.dropdown-content switch {
+    color: white;
+    display: block;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    border: 2px solid rgba(0, 136, 169, 1);
+    color: rgba(0, 136, 169, 1);;
+}
+
+.show {
+    display: block;
+}
+
+/* ---------- Collapsible div ----------  W3 Schools ref=https://www.w3schools.com/howto/howto_js_collapsible.asp */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }

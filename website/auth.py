@@ -49,8 +49,7 @@ def sign_up():
       db.session.commit()
       flash("Account Created", category='success')
       login_user(new_user, remember=True)
-      new_user_stat = Stats(user_id=new_user.id, hb_correct=0, hb_total=0, psyc_correct=0, psyc_total=0
-      , cs_correct=0, cs_total=0, econ_correct=0, econ_total=0)
+      new_user_stat = Stats(user_id=new_user.id)
       db.session.add(new_user_stat)
       db.session.commit()
       return redirect(url_for("views.home"))

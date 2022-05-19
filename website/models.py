@@ -8,6 +8,7 @@ class User(db.Model, UserMixin):
   password = db.Column(db.String(150))
   username = db.Column(db.String(150))
   questions = db.relationship('Questions')
+  stats = db.relationship('Stats', uselist=False)
 
 class Questions(db.Model):
   id = db.Column(db.Integer, primary_key=True)

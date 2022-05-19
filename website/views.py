@@ -14,9 +14,6 @@ def home():
 @login_required
 def stats():
   user_id = current_user.id
-  test_stat = Stats(user_id=user_id, hb_correct=2)
-  db.session.add(test_stat)
-  db.session.commit()
   user_stats = Stats.query.filter_by(user_id=user_id).first()
-  hb_correct = user_stats.hb_correct
-  return render_template("stats.html", user=current_user, hb_correct=hb_correct)
+  return render_template("stats.html", user=current_user, user_stats=user_stats)
+

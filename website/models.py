@@ -18,3 +18,15 @@ class Questions(db.Model):
   alternate2 = db.Column(db.Text(1000))
   alternate3 = db.Column(db.Text(1000))
   user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+
+class Stats(db.Model):
+  id = db.Column(db.Integer, primary_key=True)
+  user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+  hb_correct = db.Column(db.Integer)
+  hb_total = db.Column(db.Integer)
+  psyc_correct = db.Column(db.Integer)
+  psyc_total = db.Column(db.Integer)
+  cs_correct = db.Column(db.Integer)
+  cs_total = db.Column(db.Integer)
+  econ_correct = db.Column(db.Integer)
+  econ_total = db.Column(db.Integer)

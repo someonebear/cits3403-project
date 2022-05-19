@@ -26,12 +26,13 @@
         </div>
         
         <div class="menu">
-            
+            {% if user.is_authenticated %}
                 <a class="logs" href="/add-card"><button>Upload Flashcard</button></a>
                 <a class="logs" href="/logout"><button>Logout</button></a>
-              
+                {% else %}
                 <a class="logs" href="/login"><button>Login</button></a>
                 <a class="logs" href="/sign-up"><button>Sign Up</button></a>
+            {% endif %}
         </div>
         
     </header>

@@ -1,0 +1,128 @@
+{% extends "base.html" %} {% block title %}Quizzle{% endblock %} {% block content %}
+
+<div id="main">
+  {% if subject == None %}
+  <div class="choose-subject">
+    <form method="POST" id="subject-selector">
+      <div class="subject-selector">
+
+        <div class="subject-container">
+          <button 
+            type="submit" 
+            class="subject-btn" 
+            name="subject-option" 
+            value="Psychology"
+            onclick="startQuizzle()">
+              Psychology
+          </button>
+        </div>
+
+        <div class="subject-container">
+          <button 
+          type="submit" 
+          class="subject-btn" 
+          name="subject-option" 
+          value="Computer Science"
+          onclick="startQuizzle()">
+              Computer Science
+          </button>
+        </div>
+      </div>
+
+      <h1 class="subject-title">Pick your Subject</h1>
+
+      <div class="subject-selector">
+        <div class="subject-container">
+          <button 
+            type="submit" 
+            class="subject-btn" 
+            name="subject-option" 
+            value="Human Biology"
+            onclick="startQuizzle()">
+              Human Biology
+          </button>
+        </div>
+
+        <div class="subject-container">
+          <button 
+            type="submit" 
+            class="subject-btn" 
+            name="subject-option" 
+            value="Economics"
+            onclick="startQuizzle()">
+              Economics
+          </button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+  {% else %}
+  <div class="game">
+    <div class="question-head">
+        <h3>Question 1</h3>
+        <div id="question">
+            <p>Whats 9 + 10?</p>
+        </div>
+    </div>
+    
+    <form class="game-board" id="options">
+      <div class="option" onclick="submitAnswer('A')">
+        <div class="option-btn">
+            A
+        </div>
+        <p>19</p>
+      </div>
+      <div class="option" onclick="submitAnswer('B')">
+        <div class="option-btn">
+            B
+        </div>
+        <p>21</p>
+      </div>
+      <div class="option" onclick="submitAnswer('C')">
+        <div class="option-btn">
+            C
+        </div>
+        <p>19</p>
+      </div>
+      <div class="option" onclick="submitAnswer('D')">
+        <div class="option-btn">
+            D
+        </div>
+        <p>19</p>
+      </div>
+    </form>
+
+    <div class="scoresheet">
+        <div id="score-table">
+            <table>
+                <tr id="score-blocks">
+                    <td>Q1</td>
+                    <td>Q2</td>
+                    <td>Q3</td>
+                    <td>Q4</td>
+                    <td>Q5</td>
+                    <td>Q6</td>
+                    <td>Q7</td>
+                </tr>
+            </table>
+        </div>
+        <div class="score-card">
+            <p>Score:</p>
+            <div class="grade-container">
+                <p id="score"></p>
+                <p id="grade"></p>
+            </div>
+            
+        </div>
+    </div>
+  </div>
+</div>
+
+<div id="test"></div>
+    
+{% endif %}
+<script src="{{url_for('static', filename='main.js')}}"></script>
+
+{% endblock %}

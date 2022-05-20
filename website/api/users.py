@@ -1,4 +1,4 @@
-from app.api import api_bp
+from website.api import api_bp
 
 @api_bp.route("/users/<int:id>", methods=['GET'])
 def get_user(id):

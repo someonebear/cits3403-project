@@ -13,11 +13,13 @@ def create_app():
 
   from .auth import auth
   from .views import views
+  from website.api import api_bp
 
   app.register_blueprint(views, url_prefix="/")
   app.register_blueprint(auth, url_prefix="/")
+  app.register_blueprint(api_bp, url_prefix="/api")
 
-  from .models import User, Questions
+  from .models import User
 
   create_database(app)
 

@@ -15,5 +15,6 @@ def home():
 def stats():
   user_id = current_user.id
   user_stats = Stats.query.filter_by(user_id=user_id).first()
+  #ligma balls
   return render_template("stats.html", user=current_user, user_stats=user_stats)
 

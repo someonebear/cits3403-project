@@ -10,6 +10,13 @@ class User(db.Model, UserMixin):
   questions = db.relationship('Questions')
   stats = db.relationship('Stats', uselist=False)
 
+  def to_dict(self, include_email=False):
+    data = {
+      'id': self.id,
+      'username': self.username,
+      ''
+    }
+
 class Questions(db.Model):
   id = db.Column(db.Integer, primary_key=True)
   subject = db.Column(db.String(150))
